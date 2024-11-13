@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+<Ad>
+  <ImageUrl>~/Addrotetar img/AImg/AB.png</ImageUrl>
+  <NavigateUrl>http://www.MerraAcademy.com</NavigateUrl>
+  <AlternateText>www.MerraAcademy.com</AlternateText>
+  <Keyword>A</Keyword>
+  <Impressions>Technology</Impressions>
+  <Caption>This is the caption for Ad#1</Caption>
+</Ad>
+
+<Ad>
+  <ImageUrl>~/Addrotetar img/AImg/a1.jpg</ImageUrl>
+  <NavigateUrl>http://www.google.comt</NavigateUrl>
+  <AlternateText>www.google.com</AlternateText>
+  <Keyword>S</Keyword>
+  <Impressions>Web Site</Impressions>
+  <Caption>This is the caption for Ad#2</Caption>
+</Ad>
+
+<Ad>
+  <ImageUrl>~/Addrotetar img/AImg/a2.jpg</ImageUrl>
+  <NavigateUrl>
+    www.a.com
+  </NavigateUrl>
+  <AlternateText>www.neostream.net</AlternateText>
+  <Keyword>S</Keyword>
+  <Impressions>Flash Site</Impressions>
+  <Caption>This is the caption for Ad#2</Caption>
+</Ad>
+
+  <Ad>
+    <ImageUrl>~/Addrotetar img/AImg/a3.jpg</ImageUrl>
+    <NavigateUrl>www.a.com</NavigateUrl>
+    <AlternateText>www.CampusSelection.com</AlternateText>
+    <Keyword>S</Keyword>
+    <Impressions>Flash Site</Impressions>
+    <Caption>This is the caption for Ad#2</Caption>
+  </Ad>
+</Advertisements>

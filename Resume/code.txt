@@ -1,0 +1,24 @@
+<div class="hcb_wrap">
+<pre class="prism undefined-numbers lang-csharp" data-lang="C#"><code>
+
+<div class="hcb_wrap">
+<pre class="prism undefined-numbers lang-sql" data-lang="SQL"><code>
+
+<div class="hcb_wrap">
+<pre class="prism undefined-numbers lang-html" data-lang="HTML"><code>
+
+<div class="hcb_wrap">
+<pre class="prism undefined-numbers lang-php" data-lang="PHP"><code>
+
+
+<div class="hcb_wrap">
+<pre class="prism undefined-numbers lang-c" data-lang="C"><code>
+
+
+<div class="hcb_wrap">
+<pre class="prism undefined-numbers lang-c" data-lang="C Program Output"><code>
+
+</code></pre>
+</div>
+
+https://meeraacademy.com/php-file-include-and-require-function/

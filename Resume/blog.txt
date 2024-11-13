@@ -1,0 +1,131 @@
+#DA4453
+
+#e26a76
+#2f4c6a
+http://localhost/meera/button-control-in-asp-net/
+http://localhost/meera/how-to-use-requiredfieldvalidator-control-in-asp-net/
+
+RegularExpression validation
+RequiredFieldValidator control
+- In this asp.net tutorial we will discuss about validation control. As we know all web forms must be validated properly.
+  We can validate form manually by doing coding or use readymade validation control from toolbox.
+
+Today, in this asp.net post we will learn how to use RequiredFieldValidator control in ASP.Net.
+
+RequiredFieldValidator control is used to check that the validated control (textbox) must contain a value.
+If validated textbox control empty, RequiredFieldValidator control shows error message as we mention in text property in validator control.
+
+In other words, RequiredFieldValidator control simply checks whether something enters into the HTML form element or not.
+-------
+RequiredFieldValidator control Syntax :
+<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtname" ErrorMessage="RequiredFieldValidator" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
+
+<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+-----------
+Now, Let's understand RequiredFieldValidator control with an asp.net example.
+
+RequiredFieldValidator control in ASP.Net
+
+Step 1 - Open Visual Studio –> Create a new empty Web application.
+
+Step 2 – Create a New web page and design wwb form with two textbox control along with button control.
+
+Step 3 – Drag and drop RequiredFieldValidator control from Toolbox.
+
+Step 4 - Set ControlToValidate and ErrorMessage property of RequiredFieldValidator control
+
+Step 5 - Set ControlToValidate = ID of the control(textbox) to validate. (want to not empty).
+
+List of Properties of RequiredFieldValidator control.
+
+Properties           Description
+
+ControlToValidate  - Set ID of input control to validate.
+ErrorMessage -  Message to display in a ValidationSummary when validation fails.
+InitialValue - Indicates the data inputted in a control is equal to or not to initial value.
+SetFocusOnError - Set cursor focus on associated control if validation fails.
+Text - Text to display when validation fails.
+EnableClientScript - True/False : Indicates whether the validation done on client browser side or on server side.
+Display - Indicates how to error message will display.
+Enabled - Indicates whether validation control is enable or disable.
+
+RequiredFieldValidator Control Example in ASP.Net
+Let's understand RequiredFieldValidator Control Example to creating mandatory TextBox controls.
+Design asp.net web forms with two textbox control along with a button control. After that drag and drop two RequiredFieldValidator control for validate both textbox.
+Here, we make both textbox mandatory, user must have to input some value in both textbox control if you leave blank textbox validation control shows the error message.
+
+Drag and drop validation control from toolbox as shown in below figure.
+
+image
+
+Here,  we define two textbox one for name and other for city. we have two RequiredFieldValidator control one for name textbox and other for city textbox.
+Here, we assign text name as name textbox id and txt city as city textbox id.
+Set txtname to ControlToValidate property of first validation control.
+Set txtcity to ControlToValidate property of second validation control.
+
+HTML design code of Example:
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ReqVal.aspx.cs" Inherits="ReqVal" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    </head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        <table align="center" class="tbl">
+            <tr>
+                <td class="tblhead" colspan="2">Meera Academy</td>
+            </tr>
+            <tr>
+                <td class="tblhead1" colspan="2">RequiredFieldValidator Example</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="lbl">Name : </td>
+                <td>
+                    <asp:TextBox ID="txtname" runat="server" CssClass="txt"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtname" ErrorMessage="RequiredFieldValidator" ForeColor="Red">Enter Name !!</asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <td class="lbl">City : </td>
+                <td>
+                    <asp:TextBox ID="txtcity" runat="server" CssClass="txt"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtcity" ErrorMessage="RequiredFieldValidator" ForeColor="Red">Enter City !!</asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <asp:Button ID="Button1" runat="server" CssClass="btn" Text="Save" />
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    
+    </div>
+    </form>
+</body>
+</html>
+
+
+Design layout of asp.net example form:
+image
+
+
+
+
+
+
+
